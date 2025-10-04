@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Model from Measurements</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; }
+    #ui {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    #ui label { display: block; margin: 5px 0; }
+    #ui input { width: 100px; }
+    #ui button { margin-top: 8px; width: 100%; padding: 6px; }
+  </style>
+</head>
+<body>
+  <!-- UI Panel -->
+  <div id="ui">
+    <label>Height (in): <input type="number" id="height" value="70" step="1"></label>
+    <label>Chest (in): <input type="number" id="chest" value="20" step="1"></label>
+    <label>Depth (in): <input type="number" id="depth" value="12" step="1"></label>
+    <label>Waist (in): <input type="number" id="waist" value="16" step="1"></label>
+    <label>Hips (in): <input type="number" id="hips" value="20" step="1"></label>
+
+
+   
+    <button id="applyBtn">Apply Measurements</button>
+  </div>
+
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
